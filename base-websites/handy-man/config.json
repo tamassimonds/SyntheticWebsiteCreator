@@ -1,99 +1,365 @@
 {
   "site": {
-    "name": "HandyMan Services",
-    "logo": "/images/logo.png",
+    "name": "PawCare Services",
+    "logo": "/images/paw-logo.png",
+    "favicon": "/images/paw-favicon.ico",
     "headerContact": {
-      "phone": "+01 123455asdasd678990",
-      "email": "de232as3123mo@gmail.com"
+      "phone": "+1 (555) 123-PAWS",
+      "email": "woof@pawcare.com",
+      "showInHeader": true
+    },
+    "seo": {
+      "title": "PawCare Services - Professional Pet Care",
+      "description": "Professional pet care services including dog walking, grooming, and pet sitting",
+      "keywords": "pet care, dog walking, pet sitting, grooming, pet services"
     }
   },
   "theme": {
     "colors": {
-      "primary": "#0335cc",
-      "secondary": "#ff8a1d", 
-      "background": "#d1e3ff",
-      "text": "#040000",
-      "headerBg": "#000000",
-      "footerBg": "#0a0f43"
+      "primary": "#FFB6C1",
+      "secondary": "#8FBC8F",
+      "background": "#F5FFFA",
+      "text": "#2F4F4F",
+      "headerBg": "#FFB6C1",
+      "footerBg": "#4682B4",
+      "linkHover": "#FF69B4",
+      "buttonText": "#FFFFFF",
+      "sectionBg": "#F5FFFA",
+      "cardBg": "#FFFFFF",
+      "cardBorder": "#FFDAB9",
+      "cardShadow": "rgba(255,182,193,0.1)"
     },
     "fonts": {
-      "primary": "'Lato', sans-serif",
-      "secondary": "'Merriweather Sans', sans-serif"
+      "primary": "'Quicksand', sans-serif",
+      "secondary": "'Poppins', sans-serif",
+      "sizes": {
+        "h1": "3rem",
+        "h2": "2.5rem",
+        "h3": "2rem",
+        "body": "1.1rem",
+        "small": "0.9rem"
+      }
+    },
+    "spacing": {
+      "sectionPadding": "60px",
+      "headerHeight": "80px",
+      "containerWidth": "1200px",
+      "gridGap": "30px"
+    },
+    "borderRadius": {
+      "button": "4px",
+      "card": "8px",
+      "input": "4px"
+    },
+    "animations": {
+      "buttonHover": "all 0.3s ease",
+      "cardHover": "transform 0.2s ease"
     }
   },
-  "hero": {
-    "slides": [
+  "navigation": {
+    "items": [
       {
-        "title": "Qualitasdasdy Repair Services",
-        "subtitle": "Professional & Reliable",
-        "description": "Lorem ipsum dolor  asd sit amet, consectetur adipiscing elit",
-        "image": "images/slider-img.jpg",
-        "ctaText": "Contact Us",
-        "ctaLink": "#contact"
+        "text": "Home",
+        "link": "index.html",
+        "active": true
+      },
+      {
+        "text": "Services",
+        "link": "service.html"
+      },
+      {
+        "text": "About Us",
+        "link": "about.html"
+      },
+      {
+        "text": "Contact",
+        "link": "contact.html"
       }
     ]
   },
-  "features": [
-    {
-      "icon": "🔧",
-      "title": "Expert Service",
-      "description": "Professional repair services"
+  "layout": {
+    "header": {
+      "sticky": true,
+      "transparent": false,
+      "showTopBar": true,
+      "showSearch": false
     },
-    {
-      "icon": "⚡",
-      "title": "Fast Response",
-      "description": "Quick and reliable service"
+    "footer": {
+      "columns": 3,
+      "showSocial": true,
+      "showNewsletter": true
     },
-    {
-      "icon": "💰",
-      "title": "Best Pricing",
-      "description": "Competitive and transparent pricing"
+    "sidebar": {
+      "position": "right",
+      "width": "300px"
     }
-  ],
-  "services": {
+  },
+  "hero": {
+    "style": "split",
+    "slides": [
+      {
+        "title": "Professional Pet Care Services",
+        "subtitle": "Loving Care When You're Not There",
+        "description": "Trusted pet care services including dog walking, pet sitting, and grooming. Your pets deserve the best!",
+        "image": "images/happy-dog.jpg",
+        "ctaText": "Book Now",
+        "ctaLink": "#contact",
+        "alignment": "left"
+      }
+    ]
+  },
+  "features": {
     "title": "Our Services",
-    "description": "We offer a wide range of repair services",
+    "subtitle": "What We Offer",
+    "style": "grid",
+    "columns": 3,
     "items": [
       {
-        "title": "Plumbing",
-        "description": "Expert plumbing services for your home",
-        "image": "images/s1.jpg"
+        "icon": "🐾",
+        "title": "Dog Walking",
+        "description": "Daily walks and exercise",
+        "image": "images/dog-walking.png"
       },
       {
-        "title": "Electrical",
-        "description": "Professional electrical repair and installation",
-        "image": "images/s2.jpg"
+        "icon": "🏠",
+        "title": "Pet Sitting",
+        "description": "In-home pet care services",
+        "image": "images/pet-sitting.png"
       },
       {
-        "title": "Carpentry",
-        "description": "Custom woodwork and repairs",
-        "image": "images/s3.jpg"
+        "icon": "✂️",
+        "title": "Grooming",
+        "description": "Professional pet grooming",
+        "image": "images/grooming.png"
+      }
+    ]
+  },
+  "homeServices": {
+    "title": "Professional Pet Care Services",
+    "subtitle": "Loving Care When You're Not There",
+    "description": "We provide professional pet care services with love and dedication. Your pets deserve the best care possible while you're away.",
+    "image": "images/pet-care-hero.jpg",
+    "ctaText": "Book Now",
+    "ctaLink": "#contact"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "What We Offer",
+    "description": "Comprehensive pet care services tailored to your needs",
+    "style": "cards",
+    "showPricing": true,
+    "items": [
+      {
+        "title": "Dog Walking",
+        "description": "Daily exercise and potty breaks for your canine friend",
+        "image": "images/dog-walking.jpg",
+        "price": "From $25/walk",
+        "features": [
+          "30-minute or 1-hour walks",
+          "GPS tracking available",
+          "Regular photo updates",
+          "Flexible scheduling"
+        ]
+      },
+      {
+        "title": "Pet Sitting",
+        "description": "In-home care while you're away",
+        "image": "images/pet-sitting.jpg",
+        "price": "From $45/day",
+        "features": [
+          "Feeding and medication",
+          "Daily updates and photos",
+          "Plant watering included",
+          "Mail collection"
+        ]
+      },
+      {
+        "title": "Grooming",
+        "description": "Professional pet grooming services",
+        "image": "images/grooming.jpg",
+        "price": "From $40/session",
+        "features": [
+          "Bath and brush out",
+          "Nail trimming",
+          "Ear cleaning",
+          "Style trimming"
+        ]
       }
     ]
   },
   "about": {
-    "title": "About Us",
-    "description": "Your trusted partner for all home repair and maintenance needs",
-    "image": "images/about-img.jpg",
-    "ctaText": "Read More",
-    "ctaLink": "/about"
+    "title": "About PawCare",
+    "subtitle": "Your Trusted Pet Care Partner",
+    "description": "With over 10 years of experience in professional pet care, we understand that your pets are family. Our mission is to provide the highest quality care and love to your furry friends when you can't be there.",
+    "image": "images/about-pets.jpg",
+    "stats": [
+      {
+        "number": "5000+",
+        "label": "Happy Pets"
+      },
+      {
+        "number": "1000+",
+        "label": "Regular Clients"
+      },
+      {
+        "number": "15+",
+        "label": "Pet Care Experts"
+      }
+    ],
+    "team": {
+      "title": "Our Pet Care Team",
+      "members": [
+        {
+          "name": "Sarah Johnson",
+          "role": "Head Pet Care Specialist",
+          "image": "images/team/sarah.jpg",
+          "social": {
+            "linkedin": "#",
+            "instagram": "#"
+          }
+        }
+      ]
+    }
   },
   "contact": {
     "title": "Contact Us",
-    "address": "123 Repair Street, Fix City, FC 12345",
-    "phone": "+1 (555) 123-4567",
-    "email": "info@handyman.com",
-    "mapLocation": {
-      "lat": 40.7128,
-      "lng": -74.0060
+    "subtitle": "Get in Touch",
+    "description": "Have questions? We'd love to hear from you!",
+    "form": {
+      "fields": [
+        {
+          "type": "text",
+          "name": "name",
+          "label": "Your Name",
+          "required": true
+        },
+        {
+          "type": "email",
+          "name": "email",
+          "label": "Email Address",
+          "required": true
+        },
+        {
+          "type": "tel",
+          "name": "phone",
+          "label": "Phone Number",
+          "required": true
+        },
+        {
+          "type": "select",
+          "name": "service",
+          "label": "Service Interested In",
+          "options": [
+            "Dog Walking",
+            "Pet Sitting",
+            "Grooming",
+            "Other"
+          ]
+        },
+        {
+          "type": "textarea",
+          "name": "message",
+          "label": "Your Message",
+          "required": true
+        }
+      ],
+      "submitText": "Send Message"
     }
   },
   "footer": {
-    "copyright": "© 2024 HandyMan Services. All rights reserved.",
+    "style": "columns",
+    "logo": {
+      "show": true,
+      "image": "/images/paw-logo-white.png"
+    },
+    "sections": [
+      {
+        "title": "Quick Links",
+        "links": [
+          {
+            "text": "Home",
+            "url": "/"
+          }
+        ]
+      },
+      {
+        "title": "Services",
+        "links": [
+          {
+            "text": "Dog Walking",
+            "url": "/services/dog-walking"
+          },
+          {
+            "text": "Pet Sitting",
+            "url": "/services/pet-sitting"
+          },
+          {
+            "text": "Grooming",
+            "url": "/services/grooming"
+          }
+        ]
+      }
+    ],
+    "copyright": "© 2024 PawCare Services. All rights reserved.",
     "socialLinks": {
-      "facebook": "https://facebook.com/handyman",
-      "twitter": "https://twitter.com/handyman",
-      "instagram": "https://instagram.com/handyman"
+      "facebook": "https://facebook.com/pawcare",
+      "instagram": "https://instagram.com/pawcare",
+      "twitter": "https://twitter.com/pawcare"
+    },
+    "newsletter": {
+      "show": true,
+      "title": "Join Our Pack!",
+      "description": "Subscribe for pet care tips and special offers"
     }
+  },
+  "callToAction": {
+    "floating": {
+      "show": true,
+      "text": "Book Pet Care",
+      "link": "#contact",
+      "position": "bottom-right"
+    },
+    "sections": [
+      {
+        "title": "Ready to Give Your Pet the Best Care?",
+        "description": "First-time clients get 20% off their first service!",
+        "buttonText": "Book Now",
+        "buttonLink": "#contact",
+        "style": "primary"
+      }
+    ]
+  },
+  "cta": {
+    "primary": {
+      "text": "Get Started",
+      "style": "solid",
+      "size": "large"
+    },
+    "secondary": {
+      "text": "Learn More",
+      "style": "outline",
+      "size": "medium"
+    }
+  },
+  "testimonials": {
+    "enabled": true,
+    "style": "cards",
+    "autoplay": true,
+    "items": [
+      {
+        "name": "Emily Thompson",
+        "role": "Dog Parent",
+        "image": "images/testimonials/emily.jpg",
+        "quote": "PawCare has been amazing with my two dogs. The daily photos and updates give me such peace of mind!",
+        "rating": 5
+      },
+      {
+        "name": "Michael Chen",
+        "role": "Cat Parent",
+        "image": "images/testimonials/michael.jpg",
+        "quote": "Best pet sitters ever! My cats are always happy and well-cared for when I return from trips.",
+        "rating": 5
+      }
+    ]
   }
 } 

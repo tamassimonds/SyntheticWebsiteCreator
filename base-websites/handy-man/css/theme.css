@@ -1,0 +1,418 @@
+:root {
+  /* Colors */
+  --primary-color: #FF6B6B;
+  --secondary-color: #4ECDC4;
+  --background-color: #FFF9F9;
+  --text-color: #333333;
+  --header-bg-color: #FF6B6B;
+  --footer-bg-color: #2C3E50;
+  --link-hover-color: #FF8787;
+  --button-text-color: #FFFFFF;
+  --section-bg-color: #FFFFFF;
+  --card-bg-color: #FFFFFF;
+  --card-border-color: #FFE4E4;
+  --card-shadow-color: rgba(255,107,107,0.1);
+  
+  /* Fonts */
+  --font-primary: var(--font-family-primary, 'Lato', sans-serif);
+  --font-secondary: var(--font-family-secondary, 'Merriweather Sans', sans-serif);
+  
+  /* Spacing */
+  --spacing-section: var(--section-padding, 60px);
+  --spacing-header: var(--header-height, 80px);
+  --spacing-container: var(--container-width, 1200px);
+  --spacing-grid: var(--grid-gap, 30px);
+  
+  /* Border Radius */
+  --radius-button: var(--button-radius, 4px);
+  --radius-card: var(--card-radius, 8px);
+  --radius-input: var(--input-radius, 4px);
+}
+
+/* Base styles */
+body {
+  font-family: var(--font-primary);
+  background-color: var(--background-color) !important;
+  color: var(--text-color) !important;
+}
+
+.header_section {
+  background-color: var(--header-bg-color) !important;
+}
+
+.header_section .header_top {
+  background-color: var(--header-bg-color) !important;
+  color: var(--button-text-color) !important;
+}
+
+.header_section .header_top a {
+  color: var(--button-text-color) !important;
+}
+
+.header_section .header_bottom {
+  background-color: var(--background-color) !important;
+}
+
+.navbar-brand span {
+  color: var(--primary-color) !important;
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+  color: var(--text-color) !important;
+}
+
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link,
+.custom_nav-container .navbar-nav .nav-item.active .nav-link {
+  color: var(--primary-color) !important;
+}
+
+.btn,
+button {
+  background-color: var(--primary-color) !important;
+  color: var(--button-text-color) !important;
+  border-radius: var(--radius-button);
+}
+
+.btn:hover,
+button:hover {
+  background-color: var(--secondary-color) !important;
+}
+
+.service_section {
+  background-color: var(--section-bg-color) !important;
+}
+
+.service_section .box {
+  background-color: var(--card-bg-color) !important;
+  border: 1px solid var(--card-border-color) !important;
+  box-shadow: 0 0 15px var(--card-shadow-color) !important;
+}
+
+.feature_section {
+  background-color: var(--section-bg-color) !important;
+}
+
+.feature_section .box {
+  background-color: var(--card-bg-color) !important;
+  box-shadow: 0 0 15px var(--card-shadow-color) !important;
+}
+
+.info_section {
+  background-color: var(--primary-color) !important;
+  color: var(--button-text-color) !important;
+}
+
+.footer_section {
+  background-color: var(--footer-bg-color) !important;
+  color: var(--button-text-color) !important;
+}
+
+.footer_section a {
+  color: var(--button-text-color) !important;
+}
+
+/* Floating CTA */
+.floating-cta {
+    position: fixed;
+    z-index: 1000;
+}
+
+.floating-cta.bottom-right {
+    bottom: 20px;
+    right: 20px;
+}
+
+.floating-cta.bottom-left {
+    bottom: 20px;
+    left: 20px;
+}
+
+/* Team Section */
+.team_section {
+    padding: var(--spacing-section) 0;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member .social-links {
+    margin-top: 15px;
+}
+
+.team-member .social-links a {
+    margin: 0 10px;
+    color: var(--primary-color);
+}
+
+/* Stats */
+.stat-item {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.stat-item .number {
+    font-size: var(--font-size-h2);
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Newsletter */
+.newsletter-section {
+    background-color: var(--secondary-color);
+    padding: 30px;
+    border-radius: var(--radius-card);
+    margin-top: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: var(--radius-input);
+}
+
+/* Features list in services */
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.features-list li {
+    padding: 5px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.features-list li:before {
+    content: "✓";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+/* Price tag */
+.price {
+    font-size: var(--font-size-h3);
+    color: var(--primary-color);
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Add or update these rules */
+.hero_area {
+  background-color: var(--background-color) !important;
+}
+
+.slider_section {
+  background-color: var(--background-color) !important;
+}
+
+.about_section {
+  background-color: var(--background-color) !important;
+}
+
+.client_section {
+  background-color: var(--background-color) !important;
+}
+
+/* Update testimonial styles */
+.client_section .box {
+  background-color: var(--card-bg-color) !important;
+  border: 1px solid var(--card-border-color) !important;
+  box-shadow: 0 0 15px var(--card-shadow-color) !important;
+  border-radius: var(--radius-card);
+  padding: 20px;
+  margin: 15px;
+}
+
+.client_section .client_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.client_section .client_name h5 {
+  color: var(--primary-color) !important;
+  margin-bottom: 5px;
+}
+
+.client_section .client_name h6 {
+  color: var(--text-color) !important;
+  opacity: 0.8;
+}
+
+.client_section .fa-quote-left {
+  color: var(--secondary-color) !important;
+  font-size: 24px;
+}
+
+.client_section p {
+  color: var(--text-color) !important;
+  font-style: italic;
+}
+
+/* Add these styles */
+.repair_section .box {
+    background-color: var(--card-bg-color) !important;
+    border: 1px solid var(--card-border-color) !important;
+    box-shadow: 0 0 15px var(--card-shadow-color) !important;
+    border-radius: var(--radius-card);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.repair_section .box:hover {
+    transform: translateY(-5px);
+}
+
+.repair_section .box .img-box {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.repair_section .box h6 {
+    color: var(--text-color) !important;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Home services section styles */
+.slider_section .detail-box h1 {
+    color: var(--primary-color) !important;
+    font-size: var(--font-size-h1, 2.5rem);
+    margin-bottom: 20px;
+}
+
+.slider_section .detail-box h2 {
+    color: var(--secondary-color) !important;
+    font-size: var(--font-size-h2, 2rem);
+    margin-bottom: 15px;
+}
+
+.slider_section .detail-box p {
+    color: var(--text-color) !important;
+    font-size: var(--font-size-body, 1.1rem);
+    margin-bottom: 30px;
+}
+
+.slider_section .img-box img {
+    border-radius: var(--radius-card);
+    box-shadow: 0 0 20px var(--card-shadow-color);
+}
+
+/* Repair section styles */
+.repair_section {
+    background-color: var(--background-color) !important;
+    padding: var(--spacing-section) 0;
+}
+
+.repair_section .box {
+    background-color: var(--card-bg-color) !important;
+    border: 1px solid var(--card-border-color) !important;
+    box-shadow: 0 0 15px var(--card-shadow-color) !important;
+    border-radius: var(--radius-card);
+    padding: 25px;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.repair_section .box:hover {
+    transform: translateY(-5px);
+}
+
+.repair_section .box .img-box {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: var(--primary-color) !important;
+}
+
+.repair_section .box h6 {
+    color: var(--text-color) !important;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.repair_section .box p {
+    color: var(--text-color) !important;
+    opacity: 0.8;
+}
+
+/* Client/Testimonial section styles */
+.client_section {
+    background-color: var(--background-color) !important;
+    padding: var(--spacing-section) 0;
+}
+
+.client_section .box {
+    background-color: var(--card-bg-color) !important;
+    border: 1px solid var(--card-border-color) !important;
+    box-shadow: 0 0 15px var(--card-shadow-color) !important;
+    border-radius: var(--radius-card);
+    padding: 25px;
+    margin: 15px 0;
+}
+
+.client_section .client_id {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.client_section .client_info h6 {
+    color: var(--primary-color) !important;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.client_section .client_info p {
+    color: var(--text-color) !important;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.client_section .fa-quote-left {
+    color: var(--secondary-color) !important;
+    font-size: 24px;
+}
+
+.client_section .box > p {
+    color: var(--text-color) !important;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Slider/Home Services section styles */
+.slider_section {
+    background-color: var(--background-color) !important;
+    padding: var(--spacing-section) 0;
+}
+
+.slider_section .detail-box h1 {
+    color: var(--primary-color) !important;
+    margin-bottom: 20px;
+}
+
+.slider_section .detail-box p {
+    color: var(--text-color) !important;
+    margin-bottom: 30px;
+} 
