@@ -1,0 +1,99 @@
+{
+  "site": {
+    "name": "HandyMan Services",
+    "logo": "/images/logo.png",
+    "headerContact": {
+      "phone": "+01 123455asdasd678990",
+      "email": "de232as3123mo@gmail.com"
+    }
+  },
+  "theme": {
+    "colors": {
+      "primary": "#0335cc",
+      "secondary": "#ff8a1d", 
+      "background": "#d1e3ff",
+      "text": "#040000",
+      "headerBg": "#000000",
+      "footerBg": "#0a0f43"
+    },
+    "fonts": {
+      "primary": "'Lato', sans-serif",
+      "secondary": "'Merriweather Sans', sans-serif"
+    }
+  },
+  "hero": {
+    "slides": [
+      {
+        "title": "Qualitasdasdy Repair Services",
+        "subtitle": "Professional & Reliable",
+        "description": "Lorem ipsum dolor  asd sit amet, consectetur adipiscing elit",
+        "image": "images/slider-img.jpg",
+        "ctaText": "Contact Us",
+        "ctaLink": "#contact"
+      }
+    ]
+  },
+  "features": [
+    {
+      "icon": "🔧",
+      "title": "Expert Service",
+      "description": "Professional repair services"
+    },
+    {
+      "icon": "⚡",
+      "title": "Fast Response",
+      "description": "Quick and reliable service"
+    },
+    {
+      "icon": "💰",
+      "title": "Best Pricing",
+      "description": "Competitive and transparent pricing"
+    }
+  ],
+  "services": {
+    "title": "Our Services",
+    "description": "We offer a wide range of repair services",
+    "items": [
+      {
+        "title": "Plumbing",
+        "description": "Expert plumbing services for your home",
+        "image": "images/s1.jpg"
+      },
+      {
+        "title": "Electrical",
+        "description": "Professional electrical repair and installation",
+        "image": "images/s2.jpg"
+      },
+      {
+        "title": "Carpentry",
+        "description": "Custom woodwork and repairs",
+        "image": "images/s3.jpg"
+      }
+    ]
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Your trusted partner for all home repair and maintenance needs",
+    "image": "images/about-img.jpg",
+    "ctaText": "Read More",
+    "ctaLink": "/about"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "address": "123 Repair Street, Fix City, FC 12345",
+    "phone": "+1 (555) 123-4567",
+    "email": "info@handyman.com",
+    "mapLocation": {
+      "lat": 40.7128,
+      "lng": -74.0060
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 HandyMan Services. All rights reserved.",
+    "socialLinks": {
+      "facebook": "https://facebook.com/handyman",
+      "twitter": "https://twitter.com/handyman",
+      "instagram": "https://instagram.com/handyman"
+    }
+  }
+} 
